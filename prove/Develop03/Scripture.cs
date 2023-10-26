@@ -5,8 +5,8 @@ using System.Reflection.Metadata.Ecma335;
 
 class Scripture
 {
-    List<Reference> _references;
-    List<int> _hiddenIndexes;
+    private List<Reference> _references;
+    private List<int> _hiddenIndexes;
 
     public Scripture(Reference reference)
     {
