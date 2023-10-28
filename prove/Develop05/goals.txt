@@ -1,0 +1,10 @@
+SimpleGoal|simple goal test 1|testing|100|True
+EternalGoal|Eternal Goal Test 1|testing|50|False|4
+ChecklistGoal|Checklist Goal Test 1|testing|50|True|500|10|10
+SimpleGoal|simple goal test 2|testing|123|True
+SimpleGoal|simple goal test 3|testing|56|False
+SimpleGoal|simple goal test 4|testing|88|True
+ChecklistGoal|checklist goal test clone|testing|50|False|500|10|0
+SimpleGoal|simple goal test 1 clone|testing|100|False
+EternalGoal|eternal goal test 1 clone|testing|50|False|0
+EternalGoal|eternal goal test 1 clone x2|testing|50|False|0
