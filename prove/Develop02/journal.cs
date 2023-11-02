@@ -4,33 +4,16 @@ using System.Text.Json.Nodes;
 
 public class Journal
 {
+    private PromptGenerator _promptGenerator;
     public List<Entry> _entries;
-    public List<string> _prompts;
     public string _fileName;
 
     public Journal() 
     {
         this._entries = new List<Entry>();
-        this.PopulatePrompts();
+        //this.PopulatePrompts();
         this._fileName = "journal.json";
-    }
-
-    public void PopulatePrompts()
-    {
-        this._prompts = new List<string>();
-        this._prompts.Add("Who was the most interesting person I interacted with today?");
-        this._prompts.Add("What was the best part of my day?");
-        this._prompts.Add("What did you accomplish that you are most proud of today?");
-        this._prompts.Add("What was the strongest emotion I felt today?");
-        this._prompts.Add("If I had one thing I could do over today, what would it be?");
-        this._prompts.Add("How did you help someone today?");
-    }
-
-    public string GetRandomPrompt()
-    {
-        Random rand = new Random();
-        int ndx = rand.Next(this._prompts.Count);
-        return this._prompts[ndx];
+        this._promptGenerator = new PromptGenerator();
     }
 
     public void SaveEntry(Entry entry)
@@ -40,7 +23,7 @@ public class Journal
 
     public void Write()
     {
-        string prompt = this.GetRandomPrompt();
+        string prompt = this._promptGenerator.GetRandomPrompt();
         Console.WriteLine(prompt);
         string entryText = Console.ReadLine();
         Entry newEntry = new Entry() {_prompt = prompt, _text = entryText, _date = DateTime.Now.ToString()};
