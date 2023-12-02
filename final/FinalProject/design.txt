@@ -75,7 +75,7 @@ Program 3:
             * speaker
             * max_attendees
 
-    Reception inherits from Event
+    Reception
         Properties
             * registeredGuests (list)
         Methods
@@ -84,7 +84,7 @@ Program 3:
             * GetFullDetails
             * GetShortDescr
 
-    OutdoorGathering inherits from Event
+    OutdoorGathering
         Properties
             * weatherForecast
 
@@ -94,7 +94,7 @@ Program 3:
             * GetFullDetails
             * GetShortDescr
     
-    Address inherits from Event
+    Address
         Properties
             * streetAddress
             * city
