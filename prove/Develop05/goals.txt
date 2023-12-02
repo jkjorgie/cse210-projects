@@ -1,5 +1,5 @@
 SimpleGoal|simple goal test 1|testing|100|True
-EternalGoal|Eternal Goal Test 1|testing|50|False|4
+EternalGoal|Eternal Goal Test 1|testing|50|False|5
 ChecklistGoal|Checklist Goal Test 1|testing|50|True|500|10|10
 SimpleGoal|simple goal test 2|testing|123|True
 SimpleGoal|simple goal test 3|testing|56|False

@@ -1,0 +1,128 @@
+Program 1:
+    Video
+        Properties
+            * title
+            * author
+            * length (in seconds)
+            * list of comments
+        Methods
+            * DisplayInfo
+            * GetInfo
+            * GetComments
+    
+    Comment
+        Properties
+            * author
+            * text
+        Methods
+            * GetInfo
+
+
+Program 2:
+    Product
+        Properties 
+            * name
+            * product id
+            * price
+            * quantity (?)
+        Methods
+            * GetCost
+            * GetInfo
+
+    Customer
+        Properties
+            * name
+            * Address
+        Methods
+            * IsInUSA
+
+    Address
+        Properties
+            * streetAddress
+            * city
+            * state
+            * country
+        Methods
+            * IsInUSA
+            * GetInfo
+
+    Order
+        Properties 
+            * products (list)
+            * customer
+        Methods
+            * CalculateTotalCost
+            * GetPackingLabel
+            * GetShippingLabel
+            * CalculateShipping
+            * CalculateProductsCost
+
+Program 3:
+    Event (abstract)
+        Properties
+            * title
+            * descr
+            * date
+            * time
+            * Address
+        Methods
+            * GetStandardDetails
+            * GetFullDetails
+            * GetShortDescr
+    
+    Lecture
+        Properties
+            * speaker
+            * max_attendees
+
+    Reception inherits from Event
+        Properties
+            * registeredGuests (list)
+        Methods
+            * RegisterGuest
+            * GetStandardDetails
+            * GetFullDetails
+            * GetShortDescr
+
+    OutdoorGathering inherits from Event
+        Properties
+            * weatherForecast
+
+        Methods
+            * GetWeatherForecast
+            * GetStandardDetails
+            * GetFullDetails
+            * GetShortDescr
+    
+    Address inherits from Event
+        Properties
+            * streetAddress
+            * city
+            * state
+            * country
+        Methods
+            * GetInfo
+
+Program4:
+    Activity (abstract; Running, Cycling, and Swimming will inherit from this and implement its methods)
+        Properties
+            * length (in minutes)
+            * date
+        Methods
+            * GetDistance
+            * GetSpeed
+            * GetPace
+            * GetSummary
+
+    Running
+        Properties
+            * distance
+
+    Cycling
+        Properties
+            * speed
+
+    Swimming
+        Properties
+            * lapCount
+            * lapDistance (50m)
